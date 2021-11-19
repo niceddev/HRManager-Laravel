@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\ResumeController;
+use App\Http\Controllers\HomeController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,4 +16,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::resource('');
+Route::get('/', [HomeController::class, 'index'])->name('layouts.home');
+Route::resource('/resume', ResumeController::class);
