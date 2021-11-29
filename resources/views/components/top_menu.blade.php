@@ -1,5 +1,12 @@
-<div class="flex flex-wrap justify-center">
-    <div class="w-6/12 sm:w-4/12 px-4">
-        <img src="img/logo.png" alt="..." class="shadow rounded max-w-full h-auto align-middle border-none" />
+    <div class="container m-auto px-28">
+        <div class="flex justify-between">
+            <div class="pt-20">
+                <a href="/">
+                    <img class="h-64" src="{{ asset('img/logo.png') }}" alt="hrmanagerlogo">
+                </a>
+            </div>
+            <div class="pt-16">
+                <a href="#" class="float-right text-2xl px-15 py-5 rounded-2xl font-bold bg-yellow-300">Вход</a>
+            </div>
+        </div>
     </div>
-</div>

@@ -6,10 +6,15 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    <title>Document</title>
+    <title>@yield('title')</title>
 </head>
-<body class="bg-gradient-to-r from-gray-100 to-gray-200">
-    @include('components.top_menu')
+<body class="font-montserrat">
+    <header>
+        @include('components.top_menu')
+    </header>
     @yield('content')
+    <footer>
+        @include('components.footer')
+    </footer>
 </body>
 </html>

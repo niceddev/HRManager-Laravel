@@ -16,5 +16,6 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/', [HomeController::class, 'index'])->name('layouts.home');
 Route::resource('/resume', ResumeController::class);
+Route::get('/', [HomeController::class, 'index'])->name('layouts.home');
+//Route::get('/login', [HomeController::class, 'index'])->name('login');
