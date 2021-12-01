@@ -2,13 +2,13 @@
 @section('title', 'HRManager')
 
 @section('content')
-    <div class="container m-auto px-28 flex">
+    <div class="container m-auto px-36 flex">
         <div class="w-1/2 h-auto z-20">
             <div class="text-2xl mt-20">
                 <div class="flex">
                     <button type="button" class="font-medium bg-yellow-300 px-6 py-4">Найти специалиста</button>
                     <p class="px-7 py-4">или</p>
-                    <button type="button" class="font-medium text-gray-300 border-gray-300 border-2 px-6 py-4">Найти работу</button>
+                    <button type="button" class="font-medium text-yellow-300 border-4 border-yellow-300 px-6 py-4">Найти работу</button>
                 </div>
                 <div>
                     <p class="text-4.5xl font-bold py-5">Зарегистрируйтесь чтобы</p>

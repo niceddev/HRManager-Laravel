@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\LoginUserRequest;
+use App\Http\Requests\LoginRequest;
 
 class LoginUserController extends Controller
 {
@@ -13,7 +13,7 @@ class LoginUserController extends Controller
      */
     public function create()
     {
-        return view('user.login');
+        return view('auth.user.login');
     }
 
     /**
@@ -22,7 +22,7 @@ class LoginUserController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(LoginUserRequest $request)
+    public function store(LoginRequest $request)
     {
         dd($request->validated());
 

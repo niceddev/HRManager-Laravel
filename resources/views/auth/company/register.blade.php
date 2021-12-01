@@ -4,7 +4,12 @@
 
 @section('content')
     <div class="min-h-full flex items-center justify-center sm:px-6 lg:px-8">
-        <div class="bg-white max-w-lg px-8 p-14 -mt-16 w-full shadow-md">
+        <div class="bg-white max-w-lg px-14 p-14 -mt-16 w-full shadow-md">
+            @include('auth.company.auth_tab')
+            <div id="tab">
+                <a href="{{ route('register.user.create') }}">Соискатели</a>
+                <a href="{{ route('register.company.create') }}">Работодатели</a>
+            </div>
             <h2 class="text-center text-4xl font-bold">
                 Регистрация
             </h2>

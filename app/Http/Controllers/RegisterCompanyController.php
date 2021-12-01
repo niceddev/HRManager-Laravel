@@ -13,7 +13,7 @@ class RegisterCompanyController extends Controller
      */
     public function index()
     {
-        //
+        return view('auth.company.register');
     }
 
     /**

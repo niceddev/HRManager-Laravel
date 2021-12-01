@@ -5,10 +5,11 @@
 @section('content')
     <div class="min-h-full flex items-center justify-center sm:px-6 lg:px-8">
         <div class="bg-white max-w-lg px-8 p-14 -mt-16 w-full shadow-md">
+            @include('auth.company.auth_tab')
             <h2 class="text-center text-4xl font-bold">
-                Вход в личный кабинет
+                Вход в личный кабинет <span class="text-yellow-300">компании</span>
             </h2>
-            <form class="mt-8 space-y-6" action="{{ route('login.user.store') }}" method="POST">
+            <form class="mt-8 space-y-6" action="{{ route('login.company.store') }}" method="POST">
                 @csrf
                 <div class="rounded-md shadow-sm -space-y-px">
                     @error('email'){{ $message }}@enderror
