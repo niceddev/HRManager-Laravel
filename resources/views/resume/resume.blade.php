@@ -4,6 +4,9 @@
 
 @section('content')
     <div class="container m-auto w-1/2">
-        Resume
+        <form action="" method="post">
+            @csrf
+            <input type="text">
+        </form>
     </div>
 @endsection

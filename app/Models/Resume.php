@@ -11,11 +11,21 @@ class Resume extends Model
 {
     use HasFactory;
 
-    public function r_speciality(){
+    protected $fillable = [
+        'user_id',
+        'speciality_id',
+        'title',
+    ];
+
+    public function resume_skills(){
+        return $this->belongsToMany(Skill::class);
+    }
+
+    public function resume_speciality(){
         return $this->belongsTo(Speciality::class);
     }
 
-    public function r_user(){
+    public function resume_user(){
         return $this->belongsTo(User::class);
     }
 }

@@ -12,6 +12,7 @@ class HomeController extends Controller
 
         $random = Arr::random($array);
 
-        return view('layouts.home')->with('randPerson', $random);
+        return view('home')->with('randPerson', $random);
     }
+
 }

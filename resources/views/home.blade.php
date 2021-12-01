@@ -12,13 +12,14 @@
                 </div>
                 <div>
                     <p class="text-4.5xl font-bold py-5">Зарегистрируйтесь чтобы</p>
+{{--                    <a href="{{ route('register.company.create') }}" class="bg-yellow-300 font-medium py-4 px-10 shadow-md">Получить доступ к базе специалистов</a>--}}
                     <a href="#" class="bg-yellow-300 font-medium py-4 px-10 shadow-md">Получить доступ к базе специалистов</a>
                 </div>
 {{--                <div>--}}
 {{--                    <p class="text-4.5xl font-bold py-5">Работа найдется для каждого!</p>--}}
 {{--                    <div class="flex h-16">--}}
 {{--                        <input type="text" name="price" id="price" class="w-116 p-5 text-base shadow-md" placeholder="Профессия, должность или компания">--}}
-{{--                        <a href="{{ route('search.index') }}" class="bg-yellow-300 font-medium py-4 px-10 shadow-md">Поиск</a>--}}
+{{--                        <a href="#" class="bg-yellow-300 font-medium py-4 px-10 shadow-md">Поиск</a>--}}
 {{--                    </div>--}}
 {{--                </div>--}}
             </div>

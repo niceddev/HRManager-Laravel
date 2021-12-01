@@ -10,6 +10,18 @@ class Company extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'email',
+        'password',
+        'company_name',
+        'description',
+    ];
+
+    protected $hidden = [
+        'password',
+        'remember_token',
+    ];
+
     public function company_vacancies(){
         return $this->hasMany(Vacancy::class);
     }

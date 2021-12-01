@@ -6,7 +6,8 @@
                 </a>
             </div>
             <div class="pt-16">
-                <a href="#" class="float-right text-2xl px-15 py-5 rounded-2xl font-bold bg-yellow-300">Вход</a>
+                <a href="{{ route('login.user.create') }}" class="float-right text-2xl px-15 py-5 rounded-2xl font-bold bg-yellow-300">Вход</a>
+{{--                <a href="#" class="float-right text-2xl px-15 py-5 rounded-2xl font-bold bg-yellow-300">Вход</a>--}}
             </div>
         </div>
     </div>

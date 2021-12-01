@@ -19,6 +19,7 @@ class CreateCompaniesTable extends Migration
             $table->string('password');
             $table->string('company_name')->unique();
             $table->string('description');
+            $table->rememberToken();
             $table->timestamps();
         });
     }

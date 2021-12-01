@@ -8,11 +8,17 @@
             <h2 class="text-center text-4xl font-bold">
                 Вход в личный кабинет
             </h2>
-            <form class="mt-8 space-y-6" action="#" method="POST">
+            <form class="mt-8 space-y-6" action="{{ route('login.user.store') }}" method="POST">
                 @csrf
                 <div class="rounded-md shadow-sm -space-y-px">
-                    <input id="email" name="email" type="email" autocomplete="email" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-yellow-300 focus:border-yellow-300 focus:z-10 sm:text-sm" placeholder="Введите ваш email">
-                    <input id="password" name="password" type="password" autocomplete="current-password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-yellow-300 focus:border-yellow-300 focus:z-10 sm:text-sm" placeholder="и ваш пароль">
+                    @error('email'){{ $message }}@enderror
+                    <input id="email" name="email" type="email"
+                           class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-yellow-300 focus:border-yellow-300 focus:z-10 sm:text-sm"
+                           placeholder="Введите ваш email">
+                    @error('password'){{ $message }}@enderror
+                    <input id="password" name="password" type="password"
+                           class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-yellow-300 focus:border-yellow-300 focus:z-10 sm:text-sm"
+                           placeholder="и ваш пароль">
                 </div>
                 <div class="flex items-center justify-between">
                     <div class="flex items-center">
