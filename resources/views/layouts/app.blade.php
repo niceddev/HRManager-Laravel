@@ -14,7 +14,15 @@
     </header>
     @yield('content')
     <footer>
-        @include('components.footer')
+        @if(request()->is('/') || request()->is('login/*') || request()->is('register/*'))
+            <div class="container m-auto">
+                <div class="absolute right-0 bottom-0 -z-1">
+                    <img class="h-790px" src="{{ asset('img/footerImg.png') }}" alt="footerImg">
+                </div>
+            </div>
+        @else
+            @include('components.footer')
+        @endif
     </footer>
 </body>
 </html>

@@ -17,11 +17,11 @@ class CreateUsersTable extends Migration
             $table->id();
             $table->string('email')->unique();
             $table->string('password');
-            $table->string('first_name', 20);
-            $table->string('last_name', 20);
-            $table->date('birthday');
-            $table->string('phone_number')->unique();
-            $table->foreignId('city_id')->constrained();
+            $table->string('first_name', 20)->nullable();
+            $table->string('last_name', 20)->nullable();
+            $table->date('birthday')->nullable();
+            $table->string('phone_number')->unique()->nullable();
+            $table->foreignId('city_id')->nullable()->constrained();
             $table->string('photo_path', 2048)->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();

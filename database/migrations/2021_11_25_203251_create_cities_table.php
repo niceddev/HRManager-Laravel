@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Facades\DB;
 
 class CreateCitiesTable extends Migration
 {
@@ -17,6 +18,21 @@ class CreateCitiesTable extends Migration
             $table->id();
             $table->string('name')->unique();
         });
+
+        DB::table('cities')->insert([
+            ['name' => 'Актобе'],
+            ['name' => 'Актау'],
+            ['name' => 'Атырау'],
+            ['name' => 'Алматы'],
+            ['name' => 'Кандыагаш'],
+            ['name' => 'Караганда'],
+            ['name' => 'Костанай'],
+            ['name' => 'Нур-Султан'],
+            ['name' => 'Павлодар'],
+            ['name' => 'Петропавловск'],
+            ['name' => 'Семей'],
+            ['name' => 'Шымкент'],
+        ]);
     }
 
     /**
